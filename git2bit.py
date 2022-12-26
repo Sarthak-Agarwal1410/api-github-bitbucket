@@ -1,3 +1,8 @@
+#This script uses the github3.py and bitbucket-api libraries to interact with the GitHub and Bitbucket APIs, respectively. 
+#It fetches the repository metadata from GitHub, creates a new repository on Bitbucket, and 
+#uses the Git command-line tools to migrate the code and its branches, tags, and open pull requests. 
+#Finally, it uses the Bitbucket API to create and merge new pull requests for any open pull requests on the original repository.
+
 import github3
 import bitbucket_api
 
