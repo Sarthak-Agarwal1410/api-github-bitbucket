@@ -15,3 +15,5 @@ Migrate the repository and its contents. Use the Git command-line tools to clone
 Test the migrated repository. After the migration is complete, it's important to carefully test the migrated repository to ensure that everything was transferred correctly and that the repository is in good working order. This might involve checking the branches, tags, and pull requests to make sure they were transferred correctly, as well as running any tests or checks that you normally use to ensure the quality of your codebase.
 
 By following these steps, you should be able to create a utility in Python or Node.js that can automatically migrate a GitHub repository to Bitbucket, including all branches, tags, and open pull requests.
+
+This script uses the github3.py and bitbucket-api libraries to interact with the GitHub and Bitbucket APIs, respectively. It fetches the repository metadata from GitHub, creates a new repository on Bitbucket, and uses the Git command-line tools to migrate the code and its branches, tags, and open pull requests. Finally, it uses the Bitbucket API to create and merge new pull requests for any open pull requests on the original repository.
